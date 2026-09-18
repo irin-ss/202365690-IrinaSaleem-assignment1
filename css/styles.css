@@ -25,7 +25,7 @@
 /* Dark theme overrides, applied via [data-theme="dark"] on <html> */
 [data-theme="dark"] {
     --bg: #14181B;
-    --surface: #1D2226;
+    --surface: #2e363e;
     --ink: #ECE9E2;
     --muted: #9BA3AC;
     --border: #2B3136;
@@ -73,6 +73,10 @@ h3 { font-size: 1.15rem; }
 
 p { margin: 0 0 1em; }
 
+section {
+    scroll-margin-top: 80px;
+    padding: 1rem 0;}
+
 a {
     color: var(--accent);
     text-decoration-thickness: 1px;
@@ -91,7 +95,7 @@ img { max-width: 100%; display: block; }
 
 /* =========Header & nav======= */
 .site-header {
-    /*position: sticky; !*ai feature, removed cuz not working nicely*!*/
+    position: sticky; /*ai feature, removed cuz not working nicely*/
     top: 0;
     z-index: 10;
     background: var(--bg);
@@ -159,7 +163,7 @@ img { max-width: 100%; display: block; }
 
 /* =======Hero / About========== */
 .hero {
-    padding: 4rem 0 3rem;
+    /*padding: 4rem 0 3rem;*/
 }
 
 .hero-inner {
@@ -277,10 +281,10 @@ img { max-width: 100%; display: block; }
     font-weight: 600;
 }
 
-/*===SECTIONS==*/
-.skills {
-    padding: 5rem 0;
-}
+/*!*===SECTIONS==*!*/
+/*.skills {*/
+/*    padding: 1rem 0;*/
+/*}*/
 .skill-group h3 {
     margin-bottom: 1.5rem;
     color: var(--accent);
@@ -349,11 +353,9 @@ img { max-width: 100%; display: block; }
     display: flex;
     flex-wrap: wrap;
     align-items: flex-start;
-    justify-content: center;
-    gap: 15px;
-    padding: 20px;
-    margin: 0 auto;
+    gap: 5px;
 }
+
 
 .design-card {
     position: relative;
@@ -412,4 +414,48 @@ img { max-width: 100%; display: block; }
     line-height: 1.5;
 }
 
+/* ==========================================================================
+   Contact form
+   ========================================================================== */
+.contact {
+    padding: 3.5rem 0;
+}
+.contact-form {
+    max-width: 520px;
+    display: flex;
+    flex-direction: column;
+    gap: 1.1rem;
+}
+
+.form-row {
+    display: flex;
+    flex-direction: column;
+    gap: 0.35rem;
+}
+
+label {
+    font-weight: 600;
+    font-size: 0.9rem;
+}
+
+input, textarea, select {
+    font-family: var(--font-body);
+    font-size: 1rem;
+    padding: 0.65em 0.8em;
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    background: var(--surface);
+    color: var(--ink);
+    resize: vertical;
+}
+
+
+/* ==========================================================================
+   Footer
+   ========================================================================== */
+.site-footer {
+    border-top: 1px solid var(--border);
+    color: var(--muted);
+    font-size: 0.9rem;
+}
 
