@@ -6,8 +6,8 @@ featuring an About/Hero section, technical projects, a design gallery, skills,
 and a contact form.
 
 ## Live Demo
-
-[Add your GitHub Pages / Netlify / Vercel link here once deployed]
+[Visit this site](https://irin-ss.github.io/202365690-IrinaSaleem-assignment1/)
+to view live demo of the portfolio.
 
 ## Folder Structure
 
@@ -42,21 +42,13 @@ irina-saleem-portfolio/
   `localStorage`, and falls back to the visitor's OS-level preference on
   first visit
 
-## Setup Instructions 
-### Live demo
-[Visit this site](https://irin-ss.github.io/202365690-IrinaSaleem-assignment1/)
-to view live demo of the portfolio:
-```
-
-```
-### Run Locally
+## Setup Instructions - Run Locally
 
 No build tools or installs are required — this is a static site.
 
 1. **Clone the repository**
 ```bash
-   git clone https://github.com/<your-username>/<repo-name>.git
-   cd <repo-name>
+    https://github.com/irin-ss/202365690-IrinaSaleem-assignment1.git
 ```
 2. **Open it in a browser**
     - Double-click `index.html`, or
@@ -65,8 +57,11 @@ No build tools or installs are required — this is a static site.
 ```bash
      python3 -m http.server 8000
 ```
-     then visit `http://localhost:8000`.
 
+then visit 
+```bash
+ http://localhost:8000.
+```
 
 ## AI Use (Summary)
 

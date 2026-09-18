@@ -1,12 +1,30 @@
 document.addEventListener('DOMContentLoaded', () => {
-    // initGreeting();
     initThemeToggle();
-    // initContactForm();
-    //setFooterYear();
+    initGreeting();
 });
 
+function initGreeting() {
+    const greetingEl = document.getElementById('greeting'); /*ai help*/
+    if (!greetingEl) return;
+
+    const hour = new Date().getHours();
+    let greeting;
+
+    if (hour < 5) {
+        greeting = 'Go Sleep';
+    } else if (hour < 12) {
+        greeting = 'Good morning';
+    } else if (hour < 18) {
+        greeting = 'Good afternoon';
+    } else {
+        greeting = 'Good evening';
+    }
+
+    greetingEl.textContent = greeting;
+}
+
 /* --------------------------------------------------------------------
- * 2. Dark / light theme toggle
+ * Dark / light theme toggle
  *    Preference is saved in localStorage so it persists across visits.
  * ------------------------------------------------------------------ */
 function initThemeToggle() {
