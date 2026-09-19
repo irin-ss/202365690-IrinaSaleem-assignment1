@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;500;600;700&family=Radley:ital@0;1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mea+Culpa&display=swap');
 
 :root {
     /* Colour palette (light theme, default) */
@@ -168,7 +169,10 @@ img { max-width: 100%; display: block; }
     margin-bottom: 0.4em;
 }
 
-.highlight { color: var(--accent); }
+.highlight {
+    color: var(--accent);
+    font-family: "Mea Culpa", cursive;
+}
 
 .tagline {
     font-size: 1.15rem;
